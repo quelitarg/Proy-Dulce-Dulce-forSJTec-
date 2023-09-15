@@ -7,6 +7,9 @@ div {
 
 #logoDD {
     width: 140 px;  
+    margin:7px;
+    margin-top:7px;
+    margin-left: 5px;
 }
 
 #logoInst, #logoFace {
@@ -17,7 +20,7 @@ div {
 }
 
 #button {
-    width: 150px;
+    width: 120px;
     float: right;
     margin-top:  7px;
     margin-left: 5px;
