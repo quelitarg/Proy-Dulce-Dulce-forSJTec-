@@ -6,10 +6,10 @@ div {
 }
 
 #logoDD {
-    width: 150px;
+    width: 140 px;  
 }
 
-#logoLink, #logoInst, #logoGit, #logoFace {
+#logoInst, #logoFace {
     width: 40px;
     float: right;
     margin-top:  7px;
