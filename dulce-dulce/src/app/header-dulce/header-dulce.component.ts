@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header-dulce.component.css']
 })
 export class HeaderDulceComponent {
+  isLogged: boolean = false;
 
+  constructor() { }
 }
