@@ -1,4 +1,5 @@
-<div>
+
+    <div class="c1">
     <img src="../../assets/fotos/dulce-dulce.png" id="logoDD">
     <ng-container *ngIf="!isLogged; else logueado">
     <button type="button" class="btn btn-outline-light" id="button" (click)="isLogged = true">INGRESO</button>
@@ -8,8 +9,8 @@
 
     <ng-template #logueado>
     <button type="button" class="btn btn-outline-light" id="button" (click)="isLogged = false">CERRAR SESION</button>
-    <a href="https://www.facebook.com/groups/440062772780528/search/?q=rocio%20chanampa/"><img src="../../assets/fotos/facebook.png" id="logoFace"></a>
+    <a href="https://www.facebook.com/groups/440062772780528/user/100024393930038/"><img src="../../assets/fotos/facebook.png" id="logoFace"></a>
     <a href="https://www.instagram.com/dulcedeliciarocio/"><img src="../../assets/fotos/instagram.png" id="logoInst"></a>
     </ng-template>
-    
 </div>
+

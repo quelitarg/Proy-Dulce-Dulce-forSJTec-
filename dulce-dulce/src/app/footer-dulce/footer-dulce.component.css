@@ -1,0 +1,14 @@
+div {
+    background-color: #f8cf7d;
+    display:flex;
+    flex-direction: column;
+    
+  }
+
+#foot {
+text-align: center;
+font-size: 14px;
+box-shadow: 2px 0px 5px #111111;
+border-top-left-radius: 3%;
+border-top-right-radius: 3%;
+  }
