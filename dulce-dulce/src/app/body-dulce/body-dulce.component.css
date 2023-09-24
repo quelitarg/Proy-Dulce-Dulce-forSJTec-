@@ -13,3 +13,14 @@
     background-color: blueviolet;
     border-radius: 7%;
 }
+
+img{
+    width: 220px;
+    justify-items: stretch;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 7%;
+    border-color: rgb(124, 55, 130);
+    border-style:ridge;
+    border: 2px;
+}
