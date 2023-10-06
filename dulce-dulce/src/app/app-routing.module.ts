@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { VerProductosComponent } from './ver-productos/ver-productos.component';
-import { BodyDulceComponent } from './body-dulce/body-dulce.component';
+import { BodyAppComponent } from './body-app/body-app.component';
 
 const routes: Routes = [
-  {path:'', component: BodyDulceComponent },
+  {path:'', component: BodyAppComponent },
   {path:'productos', component: VerProductosComponent }
 ];
 

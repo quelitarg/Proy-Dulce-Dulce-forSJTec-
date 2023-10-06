@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ver-productos.component.css']
 })
 export class VerProductosComponent {
+  
   constructor(private router: Router){}
   
   navegarProductos(){
