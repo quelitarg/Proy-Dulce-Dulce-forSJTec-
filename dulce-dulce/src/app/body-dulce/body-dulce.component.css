@@ -26,6 +26,6 @@ img{
 }
  
 a {
-justify-content: left;
-text-decoration: #f5cff6;
+    text-justify:inherit;
+    color: #f5cff6; 
 }
