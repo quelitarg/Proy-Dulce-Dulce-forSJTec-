@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+//import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-body-app',
@@ -8,9 +8,15 @@ import { Router } from '@angular/router';
 })
 export class BodyAppComponent {
   
-  constructor(private router: Router){}
+  /*constructor(private router: Router){}
     
   navegarProductos(){
       this.router.navigate(['/productos']);
     }
+
+    /*constructor() { }
+  
+  ngOnInit(): void {
+
+  }*/
 }

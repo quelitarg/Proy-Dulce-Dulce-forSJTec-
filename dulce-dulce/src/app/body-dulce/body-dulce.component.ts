@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-body-dulce',
@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class BodyDulceComponent {
 
-  /*constructor(private router: Router){}
+constructor(private router: Router){}
     
   navegarProductos(){
       this.router.navigate(['/productos']);
     }
- */ 
+ 
 }

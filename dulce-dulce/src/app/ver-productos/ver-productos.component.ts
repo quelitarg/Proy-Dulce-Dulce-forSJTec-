@@ -10,7 +10,7 @@ export class VerProductosComponent {
   
   constructor(private router: Router){}
   
-  navegarProductos(){
+  navegarInicio(){
     this.router.navigate(['']);
   }
 }

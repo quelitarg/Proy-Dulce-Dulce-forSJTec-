@@ -26,5 +26,6 @@ img{
 }
  
 a {
-color-scheme: rgb(242, 196, 196);
+justify-content: left;
+text-decoration: #f5cff6;
 }
