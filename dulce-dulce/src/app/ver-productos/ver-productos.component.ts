@@ -13,4 +13,6 @@ export class VerProductosComponent {
   navegarInicio(){
     this.router.navigate(['']);
   }
+
+  
 }

@@ -1,3 +1,32 @@
 a {
+    color:#f5cff6;
+}
+body {
+background-color: blueviolet;
+
+}
+
+.card-header-color {
+    background-color:#f5cff6 !important;
+ }
+----------------------
+.link-tickets{
+    color:#17c9cf !important;
+}
+.cards-container{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.valor-ticket{
+    text-transform: uppercase;
     color: #f5cff6;
 }
+
+#btnBorrar, #btnResumen{
+    background: #cf7017 important;
+    border: #79cf17 important;
+}
+
+
+
+
