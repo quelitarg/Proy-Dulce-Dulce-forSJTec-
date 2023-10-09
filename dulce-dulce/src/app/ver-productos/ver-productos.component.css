@@ -10,12 +10,35 @@ background-color: blueviolet;
     background-color:#f5cff6 !important;
  }
 ----------------------
+.b1{
+    display: flex;
+    background-color: #f5cff6;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    overflow: hidden;
+    height: 1.5rem;
+    border: double 4px transparent;
+    border-radius: 5rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    padding: 7px;
+    margin-left: 7px;
+    background-color: #f5cff6;
+  }
+----------------------
 .link-tickets{
     color:#17c9cf !important;
 }
 .cards-container{
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 37px;
+    margin-bottom: 0px;
 }
 .valor-ticket{
     text-transform: uppercase;
@@ -26,7 +49,57 @@ background-color: blueviolet;
     background: #cf7017 important;
     border: #79cf17 important;
 }
+------------------------------
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 2px;
+    height: 40px;
+    width:100px;
+    border: none;
+    background: #a549da3d;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .lable {
+    line-height: 22px;
+    font-size: 19px;
+    color: #A649DA;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .button:hover {
+    background: #a549da62;
+  }
+  
+  .button:hover .svg-icon {
+    animation: lr 1s linear infinite;
+  }
+  
+  @keyframes lr {
+    0% {
+      transform: translateX(0);
+    }
+  
+    25% {
+      transform: translateX(-1px);
+    }
+  
+    75% {
+      transform: translateX(1px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
 
-
-
-
+.btnEdit {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

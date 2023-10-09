@@ -1,19 +1,21 @@
 <head>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="ver-productos.component.css" />
+    <link rel="stylesheet" href="./ver-productos.component.css" />
 </head>
 <body>
-    <section>
-        <a routerLink = "/">Volver a inicio</a>
-    </section>
+    <div class="b1">
+        <button class="btn1" type="button" routerLink = "/">
+            <strong>VOLVER A INICIO</strong>
+        </button>
+    </div>
 <main>
     <section class="container pt-section">
-        <div class="row justify-content-center">
+        <div class="row justify-content-flex-start">
             <div class="col-lg-10 col-xl-7">
                 <section class="cards-container">
                     <div class="row row-cols-1 row-cols-auto text-center">
+                        
                         <div class="col">
                             <div class="card mb-4 rounded-3 shadow-sm border-warning">
                                 <div class="card-header text-white card-header-warning" class ="card-header-color">
@@ -25,10 +27,19 @@
                                     <p>Torta Cumpleaños ..... $8.000</p>
                                     <p>Torta Bodas .......... $12.000</p>
                                     <p>Torta Oreo ........... $6.000</p>
-                                    
                                 </div>
                             </div>
+                        </div> 
+                        <div class="row row-cols-1 row-cols-2 text-center" class = "btnEdit">                  
+                        <button class="button">
+                            <svg class="svg-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" 
+                            xmlns="http://www.w3.org/2000/svg"><g stroke="#a649da" stroke-linecap="round" stroke-width="2">
+                            <path d="m20 20h-16"></path><path clip-rule="evenodd" d="m14.5858 4.41422c.781-.78105 2.0474-.78105 2.8284 0 .7811.78105.7811 2.04738 0 2.82843l-8.28322 8.28325-3.03046.202.20203-3.0304z" fill-rule="evenodd"></path></g></svg>
+                            <span class="lable">Edit Tortas</span>
+                        </button>
+                        <br/>
                         </div>
+
                         <div class="col">
                             <div class="card mb-4 rounded-3 shadow-sm border-warning">
                                 <div class="card-header text-white card-header-warning" class="card-header-color">
@@ -45,6 +56,16 @@
                                 </div>
                             </div>
                         </div>
+                      
+                        <div class="row row-cols-1 row-cols-2 text-center" class = "btnEdit">                  
+                            <button class="button">
+                                <svg class="svg-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" 
+                                xmlns="http://www.w3.org/2000/svg"><g stroke="#a649da" stroke-linecap="round" stroke-width="2">
+                                <path d="m20 20h-16"></path><path clip-rule="evenodd" d="m14.5858 4.41422c.781-.78105 2.0474-.78105 2.8284 0 .7811.78105.7811 2.04738 0 2.82843l-8.28322 8.28325-3.03046.202.20203-3.0304z" fill-rule="evenodd"></path></g></svg>
+                                <span class="lable">Edit Tartas</span>
+                            </button>
+                            <br/>
+                        </div>
 
                         <div class="col">
                             <div class="card mb-4 rounded-3 shadow-sm border-warning">
@@ -60,8 +81,19 @@
                                     
                                 </div>
                             </div>
-                        </div>                            
+                        </div>  
+                        
+                        <div class="row row-cols-1 row-cols-2 text-center" class = "btnEdit">                  
+                            <button class="button">
+                                <svg class="svg-icon" fill="none" height="24" viewBox="0 0 24 24" width="24" 
+                                xmlns="http://www.w3.org/2000/svg"><g stroke="#a649da" stroke-linecap="round" stroke-width="2">
+                                <path d="m20 20h-16"></path><path clip-rule="evenodd" d="m14.5858 4.41422c.781-.78105 2.0474-.78105 2.8284 0 .7811.78105.7811 2.04738 0 2.82843l-8.28322 8.28325-3.03046.202.20203-3.0304z" fill-rule="evenodd"></path></g></svg>
+                                <span class="lable">Edit Panadería</span>
+                            </button>
+                            <br/>
+                        </div>
                     </div>
+
                     <p class="text-center">Venta</p>
                     <h2 class="text-center valor-ticket">VALOR DE LA COMPRA</h2>
                 </section>
@@ -87,7 +119,7 @@
                             <div class="col-md mb-3">
                                 <label for="cantidadTickets" class="form-label">Cantidad</label>
                                 <input type="number" class="form-control" placeholder="Cantidad"
-                                    aria-label="Cantidad" id="cantidadTickets" min="1" max="20" required />
+                                    aria-label="Cantidad" id="cantidadTickets" min="1" max="80" required />
                             </div>
                             <div class="col-md mb-3">
                                 <label for="categoriaSelect" class="form-label">Categoría</label>
@@ -106,7 +138,8 @@
                                 </select>
                             </div>
                         </div>
-                        <div class="alert alert-success mt-2 mb-4" role="alert">
+                        <div class="alert alert-success mt-2
+                         mb-4" role="alert">
                             Total a pagar: $
                             <span id="totalPago" class="align-middle"></span>
                         </div>
@@ -118,7 +151,8 @@
                             </div>
                             
                             <div class="col-md mb-3">                                    
-                                <button type="button" class="w-100 btn btn-lg btn-form btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnResumen">Resumen</button>
+                                <button type="button" class="w-100 btn btn-lg btn-form btn-success" data-bs-toggle="modal" 
+                                 data-bs-target="#exampleModal" id="btnResumen">Resumen</button>
                             </div>
                         </div>
                     </form>
@@ -126,6 +160,7 @@
             </div>
         </div>
     </section>        
+    
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -152,9 +187,77 @@
           </div>
         </div>
       </div>
-</main>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        // 3. CREAR VARIABLES DE LOS ELEMENTOS
+            var nombre = document.querySelector("#nombre");
+            var apellido = document.querySelector("#apellido");
+            var email = document.querySelector("#mail");
+            var cantidad = document.querySelector("#cantidadTickets");
+            var categoria = document.querySelector("#categoriaSelect");
+            var resultado = document.querySelector("#totalPago");
+            var btnBorrar = document.querySelector("#btnBorrar");
+            var btnCalcular = document.querySelector("#btnResumen");
+            var costo = document.querySelector("#label-costo");
+
+        // 4. APLICAR LA ESTRATEGIA PARA ESCUCHAR O CAPTURAR EL EVENTO
+
+            btnCalcular.addEventListener("click", calcularTotal);
+            btnBorrar.addEventListener("click", borrar);
+            cantidad.addEventListener("click", calcularValor);
+            categoria.addEventListener("click", calcularValor);
+
+            function calcularTotal(event) {
+            event.preventDefault();
+            var valorProducto = valorxCat(categoria.value);  
+            var valor = valorProducto * cantidad.value;  
+            resultado.textContent = valor;
+            costo.textContent = "El costo total de los boletos es de " + valor + " $.";
+        }
+
+        function calcularValor(){
+            var valorProducto = valorxCat(categoria.value);
+            var valor = valorProducto * cantidad.value;  
+            resultado.textContent = valor;
+        }
+
+        function valorxCat(categoria) {
+            switch (categoria) {
+                case "0":
+                return 0;
+                case "1":
+                return 9000;
+                case "2":
+                return 6000;
+                case "3":
+                return 8000;
+                case "4":
+                return 2600;
+                case "5":
+                return 3000;
+                case "6":
+                return 2400;
+                case "7":
+                return 950;
+                case "8":
+                return 70;
+                case "9":
+                return 170;
+                default:
+                return 0;
+            }
+        }
+        function borrar() {
+            nombre.value = "";
+            apellido.value = "";
+            cantidad.value = "";
+            categoria.value = "";
+            resultado.textContent = "";
+        }
+
     </script>
 
 </body>

@@ -15,8 +15,8 @@
 }
 
 img{
-    width: 220px;
-    justify-items: stretch;
+    width: 250px;
+    height: 300px;
     margin: 3px;
     padding: 3px;
     border-radius: 7%;
@@ -29,3 +29,38 @@ a {
     float: left;
     color: #f5cff6; 
 }
+
+.flex-item{
+    align-self: center;
+}
+
+p {
+    font-family: berhnard tango;
+    height-font: 1.8rem;
+}
+
+-----------------------
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    overflow: hidden;
+    height: 3rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-color: #f5cff6;
+  }
+  
+  
+  
+    
+   
+
+  
+  

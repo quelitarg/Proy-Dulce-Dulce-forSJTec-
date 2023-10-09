@@ -1,20 +1,25 @@
 
-<div class="c1">
-    <article>   
+<div class="c0">
+    <section>   
     <img src="../../assets/fotos/dulce-dulce.png" id="logoDD">
-    <p>Tel. de contacto: 3875664400</p>
+    <!--<p>Tel. de contacto: 3875664400</p>-->
+    </section> 
+    <article > 
+    <img src="../../assets/fotos/whatsapp.png" id="logoWApp">
+    <p>Tel.3875664400</p>
     </article> 
-
+    <section>
     <ng-container *ngIf="!isLogged; else logueado">
-    <button type="button" class="btn btn-outline-light" id="button" (click)="isLogged = true">INGRESO</button>
+    <button type="button" class="btn btn-outline-light" id="button" (click)="isLogged = true">INGRESAR</button>
     <a href="https://www.facebook.com/groups/440062772780528/search/?q=rocio%20chanampa/"><img src="../../assets/fotos/facebook.png" id="logoFace"></a>
     <a href="https://www.instagram.com/dulcedeliciarocio/"><img src="../../assets/fotos/instagram.png" id="logoInst"></a>
     </ng-container>
 
     <ng-template #logueado>
-    <button type="button" class="btn btn-outline-light" id="button" (click)="isLogged = false">CERRAR SESION</button>
+    <button type="button" class="btn btn-outline-light" id="button" (click)="isLogged = false">CERRAR</button>
     <a href="https://www.facebook.com/groups/440062772780528/user/100024393930038/"><img src="../../assets/fotos/facebook.png" id="logoFace"></a>
     <a href="https://www.instagram.com/dulcedeliciarocio/"><img src="../../assets/fotos/instagram.png" id="logoInst"></a>
     </ng-template>
+</section>
 </div>
 
