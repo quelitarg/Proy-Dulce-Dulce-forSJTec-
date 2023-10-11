@@ -7,7 +7,9 @@ import { BodyDulceComponent } from './body-dulce/body-dulce.component';
 import { FooterDulceComponent } from './footer-dulce/footer-dulce.component';
 import { VerProductosComponent } from './ver-productos/ver-productos.component';
 import { BodyAppComponent } from './body-app/body-app.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { NuevaApiService } from './servicios/nueva-api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,15 @@ import { BodyAppComponent } from './body-app/body-app.component';
 ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: NuevaApiService,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
