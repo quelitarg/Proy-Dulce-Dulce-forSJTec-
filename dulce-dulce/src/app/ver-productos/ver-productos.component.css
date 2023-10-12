@@ -9,13 +9,29 @@ background-color: blueviolet;
 .card-header-color {
     background-color:#f5cff6 !important;
  }
+
+ #container1 {
+  border-color: blueviolet;
+  border-radius: 1%;
+  border-width: 5px;
+  place-content: center;
+  background-color: #f5cff6;
+  padding-top: 7px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+ }
+
+ #pantalla{
+  border:#f5cff6;
+ }
 ----------------------
 .b1{
     display: flex;
     background-color: #f5cff6;
     font-size: 1.2rem;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: stretch;
 }
 .btn1 {
     display: flex;
@@ -50,6 +66,7 @@ background-color: blueviolet;
     border: #79cf17 important;
 }
 ------------------------------
+ /*boton dinámico*/
 .button {
     display: flex;
     justify-content: center;

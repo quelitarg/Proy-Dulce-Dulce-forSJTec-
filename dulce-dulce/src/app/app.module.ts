@@ -26,11 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [{
-    provide: HTTP_INTERCEPTORS,
-    useClass: NuevaApiService,
-    multi: true
-  }],
+  providers: [NuevaApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

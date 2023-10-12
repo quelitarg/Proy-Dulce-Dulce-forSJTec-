@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NuevaApiService } from './servicios/nueva-api.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { NuevaApiService} from 'src/app/servicios/nueva-api.service';
+
 
 @Component({
   selector: 'app-ver-productos',
@@ -11,13 +12,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class VerProductosComponent implements OnInit {
   
-  ngOnInit(): void {
-    
-  }
+  ngOnInit(): void {}
   artista: any;
   signupForm: FormGroup;
   
-  constructor(private _builder: FormBuilder, private router: Router, private nuevaApiServices: NuevaApiService ) {
+  constructor(private _builder: FormBuilder, private router: Router, private nuevaApiServices: NuevaApiService) {
     this.signupForm = this._builder.group({
     nombre:[''],
     apellido:[''],
@@ -33,14 +32,15 @@ export class VerProductosComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  
   fetchNuevaApi(primeraPalabra:string, segundaPalabra: string) {
     this.nuevaApiServices.getNuevaApi(primeraPalabra, segundaPalabra)
     .subscribe(
-      (response) =>{
+      (response: any) =>{
         console.log(response);
       this.artista = response}
       ,
-      (err) => {
+      (err: any) => {
         console.log(err);
       },
       () => {
@@ -49,7 +49,7 @@ export class VerProductosComponent implements OnInit {
       );
     }
   submitDatos(primeraPalabra: HTMLInputElement, segundaPalabra:HTMLInputElement) {
-    if(primeraPalabra.value || segundaPalabra.value) {
+    if(primeraPalabra.value && segundaPalabra.value) {
       this.fetchNuevaApi(primeraPalabra.value, segundaPalabra.value)
 
       primeraPalabra.value = '';
@@ -58,9 +58,9 @@ export class VerProductosComponent implements OnInit {
         alert('Ingrese los datos correctamente')
       }
      
-      primeraPalabra.focus ()
-      return false
-       
-  }
+      primeraPalabra.focus ();
+      return false;
+    }
+
 
 }
